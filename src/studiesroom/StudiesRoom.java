@@ -11,6 +11,8 @@ public class StudiesRoom{
     static final int MAX_STUDENTS = 10;
     static final int NUM_OF_STUDENTS = 15;
 
+    public static int studentsInRoom = 0;
+
     // Possible student names list 
     static final String[] STUDENT_NAMES = {
         "Andrés",
@@ -41,5 +43,8 @@ public class StudiesRoom{
             studentsList[i] = new Student(getName(i));
             studentsList[i].run();
         }
+
+        Director director = new Director();
+        director.run();
     }
 }

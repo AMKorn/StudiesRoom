@@ -11,9 +11,14 @@ public class Student implements Runnable {
         return name;
     }
 
+    private void enterRoom(){
+        StudiesRoom.studentsInRoom++;
+        System.out.println(name + " enters the study room. Students: " + StudiesRoom.studentsInRoom);
+    }
+
     @Override
     public void run(){
-        System.out.println(this);
+        enterRoom();
     }
 
     @Override
