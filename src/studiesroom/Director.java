@@ -17,6 +17,7 @@ public class Director implements Runnable {
     @Override
     public void run() {
         while(rounds < NUM_OF_ROUNDS) {
+            // TODO all of this
             switch(state){
                 case WAITING:
                     break;
